@@ -1,0 +1,13 @@
+.cards-page {
+  margin-top: 10px;
+}
+
+.deck-name {
+  margin: 40px;
+  padding: 30px;
+}
+
+.list ul li {
+  list-style: none;
+  display: inline-block;
+}
