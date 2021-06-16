@@ -17,7 +17,7 @@ function Login() {
           <input type="password" />
         </label>
         <div>
-          {/* <button type="submit" a href="DeckPage.js">Submit</button> */}
+          
           <button onClick={() => { history.push("/DeckPage");}}>Login</button>
 		
         </div>
