@@ -1,0 +1,123 @@
+/*.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: gray;
+  overflow: hidden;
+}*/
+
+.deck {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 220px 80px;
+  grid-template-areas: "text" "stats";
+
+  font-family: roboto;
+  border-radius: 18px;
+  background: #A6D6D6;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  /* background: url("imgs/img1.jpg"); */
+  background-size: cover;
+
+  transition: 0.5s ease;
+  cursor: pointer;
+
+  /*width: 33.33%;
+  margin: 10px;*/
+}
+
+.deck-text {
+  grid-area: text;
+  margin: 25px;
+  color: black;
+  position: relative;
+}
+
+.deck-text .data {
+  color: black;
+  font-size: 22px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.deck-text h3 {
+  margin-top: 0px;
+  font-size: 20px;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+
+.deck-text p {
+  color: black;
+  font-size: 15px;
+  font-weight: 300;
+  position: absolute;
+  top: 60%;
+}
+
+.deck-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background: #A58FAA;
+}
+
+.deck-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+}
+
+.deck-stats .type {
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.deck-stats .value {
+  font-size: 22px;
+  font-weight: 250;
+}
+
+.deck:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+}
+
+.deck-stats .stat button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+.stat button:hover {
+  background-color: black;
+  color: whitesmoke;
+  transition: 0.5s;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.stat button:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}

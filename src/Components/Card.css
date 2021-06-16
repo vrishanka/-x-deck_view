@@ -1,0 +1,58 @@
+body {
+  font-family: Arial;
+  background-color: #fff;
+}
+
+.card-container {
+  width: 20%;
+  background-color: white;
+  border-radius: 15px;
+  margin: 40px;
+  margin-left: 100px;
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+}
+
+.img img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.title {
+  text-align: center;
+  padding: 5px;
+}
+
+.description {
+  text-align: center;
+  padding: 4px;
+}
+
+.btn button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+button:hover {
+  background-color: black;
+  color: whitesmoke;
+  transition: 0.5s;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+.btn button a {
+  text-decoration: none;
+}
