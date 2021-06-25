@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import Drop from "./drag_drop/Drop";
+import Drop from "./components/Drop";
 
 function App() {
   return (
