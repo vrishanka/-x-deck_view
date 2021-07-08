@@ -6,13 +6,16 @@ function DeckPage() {
     return (
         <div className="deck-page">
             <div className="nav-buttons">
+                <h1>COLLECTIONS</h1>
                 <nav>
+                <hr></hr>
                     <ul>
                         <li><button>Edit Deck</button></li>
                         <li><button>Share Deck</button></li>
                         <li><button>Delete Deck</button></li>
                     </ul>
                 </nav>
+                <hr></hr>
             </div>
             <div className="deck-cards">
                 <ul>

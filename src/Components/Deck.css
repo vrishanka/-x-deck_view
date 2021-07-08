@@ -16,10 +16,10 @@
 
   font-family: roboto;
   border-radius: 18px;
-  background: white;
+  background: #a6d6d6;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center;
-  background: url("imgs/img1.jpg");
+  /* background: url("imgs/img1.jpg"); */
   background-size: cover;
 
   transition: 0.5s ease;
@@ -32,12 +32,12 @@
 .deck-text {
   grid-area: text;
   margin: 25px;
-  color: white;
+  color: black;
   position: relative;
 }
 
 .deck-text .data {
-  color: whitesmoke;
+  color: black;
   font-size: 22px;
   position: absolute;
   top: 0px;
@@ -53,7 +53,7 @@
 }
 
 .deck-text p {
-  color: floralwhite;
+  color: black;
   font-size: 15px;
   font-weight: 300;
   position: absolute;
@@ -61,13 +61,14 @@
 }
 
 .deck-stats {
+  width: 100%;
   grid-area: stats;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  background: rgb(255, 7, 110);
+  background: #a58faa;
 }
 
 .deck-stats .stat {

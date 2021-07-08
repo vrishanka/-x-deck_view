@@ -1,13 +1,165 @@
-.cards-page {
-  margin-top: 10px;
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.deck-name {
-  margin: 40px;
-  padding: 30px;
+.front-card {
+  box-shadow: 1px 1px 4px 1px gray;
+  width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+.front-card .card_img {
+  width: 100%;
+  height: 200px;
+  transition: ease all -3s;
+}
+.front-card .cardInfo {
+  display: block;
+  padding: 20px 10px 5px 10px;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  color: #666;
+}
+.cardInfo h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+.cardInfo p {
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+.action {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+.price {
+  color: crimson;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 800;
 }
 
-.list ul li {
-  list-style: none;
-  display: inline-block;
+.cart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  width: 35px;
+  height: 35px;
+}
+.cart:hover {
+  cursor: pointer;
+}
+.cart svg,
+path,
+circle {
+  stroke: currentColor;
+  fill: transparent;
+  transition-delay: 0.2s;
+}
+.btn button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s all;
+}
+button:hover {
+  background-color: black;
+  color: whitesmoke;
+  transition: 0.5s;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  transform: scale(0.98);
+  /* Scaling button to 0.98 to its original size */
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  /* Lowering the shadow */
+}
+.btn button a {
+  text-decoration: none;
+}
+
+.front-card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+}
+.select_filter {
+  text-align: center;
+  width: 150px;
+  margin: 10px auto;
+}
+.select_filter select {
+  text-align: center;
+  width: 200px;
+  background: lightgrey;
+  padding: 5px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.back-card {
+  box-shadow: 1px 1px 4px 1px gray;
+  width: 300px;
+  margin: 30px auto;
+  padding: 0;
+  border-radius: 8px;
+  height: 450px;
+}
+.back-card:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+}
+.back-card .back-cardInfo {
+  padding: 20px;
+  height: 88%;
+}
+.back-cardInfo h1 {
+  margin: 5px;
+}
+.back-card .back-btn {
+  width: 100%;
+  height: 100px;
+  display: float;
+  position: fixed;
+  height: 12%;
+}
+.back-btn .bbtn {
+  width: 50%;
+  margin: 10px 0;
+  margin-left: 0%;
+  padding: 12px 5px;
+  font-size: 18px;
+  background-color: rgb(255, 153, 0);
+}
+.back-btn .buy-btn {
+  float: left;
+  border-bottom-left-radius: 8px;
+}
+.back-btn .cart-btn {
+  float: right;
+  border-bottom-right-radius: 8px;
 }
