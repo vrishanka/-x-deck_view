@@ -1,23 +1,54 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 function Filter({ sorts, sorting, filtering, cat}) {
 
-    return (
-        <div className="select_filter">
-            <select value={cat} onChange={filtering}>
-                <option value="all">All</option>
-                <option value="earphones">Earphones</option>
-                <option value="mobile">Mobile</option>
-                <option value="usb">Usb Cable</option>
-                <option value="powerbank">PowerBank</option>
+    const [selected, setSelected] = useState("");
 
-            </select>
-            <select value={sorts} onChange={sorting}>
-                <option value="all">All</option>
-                <option value="low">Low to high</option>
-                <option value="high">High to low</option>
-            </select>
-        </div>
+    const changeSelectOptionHandler = (event) => {
+        setSelected(event.target.value);
+    }
+    const items = ["earphone", "mobile", "usb", "powerbank"];
+    const price = ["all", "low", "high"];
+
+    let type = null;
+    let options = null;
+    let val = null;
+    let change = null;
+    
+
+    if (selected === "Items") {
+        type = items;
+        val = cat ;
+        change = filtering ;
+        
+    }
+    else if (selected === 'Price') {
+        type = price;
+        val = sorts ;
+        change = sorting ;
+        
+    }
+    if (type) {
+        options = type.map((el) => <option key={el}>{el}</option>);
+    }
+    return (
+        <form className="filter">
+            <div className="select_filter">
+                <select onChange={changeSelectOptionHandler}>
+                    <option>Category</option>
+                    <option>Items</option>
+                    <option>Price</option>
+                </select>
+            </div>
+            <div className="select_filter">
+                <select value={val} onChange={change}>
+                    <option>Sub-Category</option>
+                    {options}
+                    
+                </select>
+                
+            </div>
+        </form>
     )
 }
 
