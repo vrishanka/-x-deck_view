@@ -2,6 +2,7 @@ import React, {Component, useState} from 'react';
 import ReactCardFlip from 'react-card-flip';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types'
+import StarIcon from '@material-ui/icons/Star';
 import img1 from './images/mobile.jpg'
 
 class Product extends Component {
@@ -25,6 +26,12 @@ class Product extends Component {
                     <div className="front">
                         <div className="card-img">
                             <img src={this.props.product.img} alt="no photo" width='200px' height="200px" />
+                        </div>
+                        <div className="rate">
+                        <StarIcon className="star" />
+
+                            <div className="star"></div>
+                            <h4>{product.rate}</h4>
                         </div>
                         <div className="cardInfo">
                             <h1>{product.title}</h1>

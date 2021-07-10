@@ -8,16 +8,19 @@ export const Data = [
     {
         id: 1,
         title: 'JBL Earphones',
-        img:img1,
+        img: img1,
+        rate:3.5,
         category: 'earphones',
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in erat massa.",
         back_desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-        price:600
+        price: 600
+        
     },
     {
         id: 2,
         title: 'AcL Earphones',
-        img:img1,
+        img: img1,
+        rate:4.5,
         category: 'earphones',
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in erat massa.",
         back_desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -26,7 +29,8 @@ export const Data = [
     {
         id: 3,
         title: 'Xen Z1',
-        img:img2,
+        img: img2,
+        rate:4.0,
         category: 'mobile',
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in erat massa.",
         back_desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -35,7 +39,8 @@ export const Data = [
     {
         id: 4,
         title: 'NYC PowerBank',
-        img:img5,
+        img: img5,
+        rate:3.0,
         category: 'powerbank',
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in erat massa.",
         back_desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -45,7 +50,8 @@ export const Data = [
         id: 5,
         title: 'Xez Headphones',
         category: 'earphones',
-        img:img1,
+        img: img1,
+        rate:3.8,
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in erat massa.",
         back_desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
         price:500
@@ -53,7 +59,8 @@ export const Data = [
     {
         id: 6,
         title: 'Zebra X1',
-        img:img2,
+        img: img2,
+        rate:4.2,
         category: 'mobile',
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in erat massa.",
         back_desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -62,7 +69,8 @@ export const Data = [
     {
         id: 7,
         title: 'C type',
-        img:img3,
+        img: img3,
+        rate:3.8,
         category: 'usb',
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in erat massa.",
         back_desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -71,7 +79,8 @@ export const Data = [
     {
         id: 8,
         title: 'micro type',
-        img:img4,
+        img: img4,
+        rate:4.0,
         category: 'usb',
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in erat massa.",
         back_desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -80,7 +89,8 @@ export const Data = [
     {
         id: 9,
         title: 'micro type',
-        img:img4,
+        img: img4,
+        rate:3.5,
         category: 'usb',
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in erat massa.",
         back_desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
@@ -89,7 +99,8 @@ export const Data = [
     {
         id: 10,
         title: 'micro type',
-        img:img4,
+        img: img4,
+        rate:4.0,
         category: 'usb',
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in erat massa.",
         back_desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
