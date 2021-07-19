@@ -13,6 +13,7 @@ function DeckPage() {
                         <li><button>Edit Deck</button></li>
                         <li><button>Share Deck</button></li>
                         <li><button>Delete Deck</button></li>
+                        <li><button>Trade</button></li>
                     </ul>
                 </nav>
                 <hr></hr>
